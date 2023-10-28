@@ -14,10 +14,15 @@ import {
 //which displays what is shown in the url of the page ("/" is a home page)
 const router = createBrowserRouter([
   {
+    //nesting routs with index route for the landing for "/" path
     path: '/',
     element: <HomeLayout />,
+    errorElement: <Error />,
     children: [
-      //nesting routs
+      {
+        index: true,
+        element: <Landing />,
+      },
       {
         path: 'register',
         element: <Register />,
