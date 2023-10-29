@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/images/test-logo.svg';
 import img from '../assets/images/test-img.jpg';
 import Container from '../assets/wrappers/LandingPage';
 import { Link } from 'react-router-dom';
+import { Logo } from '../components';
 /**
  *
  * @returns
@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <Container>
       <nav>
-        <img src={logo} alt="Tech Trend Flow Logo" className="logo" />
+        <Logo />
       </nav>
       <div className="container page">
         <div className="info">
