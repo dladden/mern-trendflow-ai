@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/test-logo.svg';
+import img from '../assets/images/test-img.jpg';
 import Container from '../assets/wrappers/LandingPage';
 import { Link } from 'react-router-dom';
 /**
@@ -27,10 +28,11 @@ const Landing = () => {
           <Link to="/register" className="btn register-link">
             Create Account
           </Link>
-          <Link to="/login" className="btn register-link">
+          <Link to="/login" className="btn btn-color register-link">
             Start Using
           </Link>
         </div>
+        <img src={img} alt="" className="img main-img" />
       </div>
     </Container>
   );
