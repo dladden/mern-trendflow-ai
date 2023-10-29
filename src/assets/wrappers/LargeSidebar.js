@@ -1,6 +1,9 @@
 import styled from 'styled-components';
+/**
+ * REMEMBER: you can export the the styles into any component or page the reuse it
+ */
 
-const Wrapper = styled.aside`
+const Container = styled.aside`
   display: none;
   @media (min-width: 992px) {
     display: block;
@@ -59,4 +62,4 @@ const Wrapper = styled.aside`
     }
   }
 `;
-export default Wrapper;
+export default Container;

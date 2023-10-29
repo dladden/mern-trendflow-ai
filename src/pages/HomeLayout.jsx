@@ -7,12 +7,9 @@ import { Outlet } from 'react-router-dom';
 
 const HomeLayout = () => {
   return (
-    <div>
-      <div>
-        <nav>Navbar</nav>
-        <Outlet />
-      </div>
-    </div>
+    <>
+      <Outlet />
+    </>
   );
 };
 
