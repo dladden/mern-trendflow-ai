@@ -2,12 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   nav {
-    width: var(--fluid-width);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    height: var(--nav-height);
-    display: flex;
-    align-items: center;
+    
   }
   .page {
     min-height: calc(100vh - var(--nav-height));
@@ -21,10 +16,6 @@ const Container = styled.section`
       color: var(--primary-700);
     }
     margin-bottom: 1.5rem;
-  }
-  .logo{
-    width: 100px;
-    height: auto; 
   }
   p {
     line-height: 2;

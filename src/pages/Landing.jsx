@@ -2,7 +2,7 @@ import React from 'react';
 import img from '../assets/images/test-img.jpg';
 import Container from '../assets/wrappers/LandingPage';
 import { Link } from 'react-router-dom';
-import { Logo } from '../components';
+import { Logo, LandingNavbar } from '../components';
 /**
  *
  * @returns
@@ -10,20 +10,22 @@ import { Logo } from '../components';
 const Landing = () => {
   return (
     <Container>
-      <nav>
-        <Logo />
-      </nav>
+      <div>
+        <LandingNavbar />
+      </div>
+
       <div className="container page">
         <div className="info">
           <h1>
             Find <span>Tech Trends</span>
           </h1>
           <p>
-            "Vite" and "Create React App" (CRA) are both build
-            tools/environments for creating modern web applications, with each
-            having its own advantages. Saying one is "better" than the other is
-            subjective, as it often depends on specific use cases, preferences,
-            and project requirements. However, let's discuss some advantages of
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident
           </p>
           <Link to="/register" className="btn register-link">
             Create Account
