@@ -1,4 +1,5 @@
 import { socialLinks } from '../data';
+import { Link } from 'react-router-dom';
 import LandingNavbarLinks from './LandingNavbarLinks';
 import LandingNavbarSocials from './LandingNavbarSocials';
 import Logo from './Logo';
@@ -13,8 +14,9 @@ const LandingNavbar = () => {
           </button>
         </div>
         {/* <!-- left this comment on purpose --> */}
-
         <LandingNavbarLinks parentClass="nav-links" itemClass="nav-link" />
+        <span className="vertical-line"></span>
+        <Link to="/login">login</Link>
         <span className="vertical-line"></span>
         <ul className="nav-icons">
           {socialLinks.map((link) => {
