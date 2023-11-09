@@ -26,6 +26,7 @@ html {
 
   /* grey */
   --grey-50: #efefef;
+  --grey-70: #cbcbcb;
   --grey-100: #b3b3b3;
   --grey-200: #a0a1a0;
   --grey-300: #8d8e8d;
@@ -46,8 +47,8 @@ html {
 
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
-  /* rest of the vars */
 
+  /* rest of the vars */
   --border-radius: 3rem;
   --letter-spacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -55,6 +56,15 @@ html {
   --fixed-width: 600px;
   --fluid-width: 90vw;
   --nav-height: 6rem;
+
+  /* navbar-styling */
+  --spacing: 1px;
+  --radius: 0.25rem;
+
+  /* navbar shadow */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
+
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -343,7 +353,7 @@ button:disabled {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white);
+  background: var(--white);
   box-shadow: var(--dark-shadow);
   z-index: 2;
   height: 4rem;
@@ -368,7 +378,7 @@ button:disabled {
   border: none;
   outline: none;
   font-size: 1.5rem;
-  color: var(--clr-primary-5);
+  color: var(--primary-500);
   cursor: pointer;
   transition: var(--transition);
 }
@@ -381,13 +391,13 @@ button:disabled {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   transition: var(--transition);
-  color: var(--clr-grey-1);
+  color: var(--grey-600);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .nav-link:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  color: var(--primary-100);
+  background: var(--primary-600);
   padding-left: 2.25rem;
 }
 /* nav toggle functionality */
@@ -399,9 +409,20 @@ button:disabled {
 .show-links {
   height: 280px;
 }
+.vertical-line {
+  display: none; /* Hide the line on smaller screens */
+}
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
   /* hide nav toggle button */
+  .vertical-line {
+    display: inline-block; /* Make it an inline-block so you can set width and height */
+    height: 25px; /* The height of your line */
+    width: 1.5px; /* The width of your line */
+    background-color: var(--grey-70); /* The color of your line */
+    margin: 0 15px; /* Add some margin to separate the line from adjacent content */
+    vertical-align: middle; /* This will vertically center the line with adjacent icons/text */
+  }
   .nav-toggle {
     display: none;
   }
@@ -425,7 +446,7 @@ button:disabled {
   }
   .nav-link:hover {
     padding: 0;
-    color: var(--clr-primary-5);
+    color: var(--primary-600);
     background: transparent;
   }
   .nav-icons {
@@ -437,11 +458,23 @@ button:disabled {
   }
   .nav-icon {
     margin-right: 0.7rem;
-    color: var(--clr-primary-5);
+    color: var(--grey-500);
     font-size: 1.2rem;
     transition: var(--transition);
   }
   .nav-icon:hover {
-    color: var(--clr-primary-8);
+    color: var(--grey-800);
+  }
+  .nav-header {
+    flex-grow: 1; /* Allows the logo container to grow and push other elements to the sides */
+  }
+  .nav-links {
+    display: flex; /* Displays links in a row */
+    justify-content: flex-start; /* Aligns links to the start */
+  }
+  .nav-icons {
+    display: flex; /* Displays social icons in a row */
+    justify-content: flex-end; /* Aligns social icons to the end */
+    margin-left: auto; /* Pushes social icons to the right */
   }
 }

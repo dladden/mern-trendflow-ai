@@ -15,7 +15,7 @@ const LandingNavbar = () => {
         {/* <!-- left this comment on purpose --> */}
 
         <LandingNavbarLinks parentClass="nav-links" itemClass="nav-link" />
-
+        <span className="vertical-line"></span>
         <ul className="nav-icons">
           {socialLinks.map((link) => {
             return (
