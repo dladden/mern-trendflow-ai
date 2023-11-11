@@ -181,6 +181,25 @@ ul {
   display: block;
   object-fit: cover;
 }
+
+/* section */
+.section {
+  padding: 0.5rem 0;
+  scroll-margin-top: 4rem;
+}
+.section-title {
+  margin-bottom: 1rem;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
 /* buttons */
 
 .btn,

@@ -5,10 +5,10 @@ const Container = styled.section`
     
   }
   .page {
-    min-height: calc(100vh - var(--nav-height));
+    min-height: calc(60vh - var(--nav-height));
     display: grid;
     align-items: center;
-    margin-top: -3rem;
+    margin-top: 6rem;
   }
   h1 {
     font-weight: 700;

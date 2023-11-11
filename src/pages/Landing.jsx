@@ -2,7 +2,7 @@ import React from 'react';
 import img from '../assets/images/test-img.jpg';
 import Container from '../assets/wrappers/LandingPage';
 import { Link } from 'react-router-dom';
-import { LandingNavbar, LandingHero } from '../components';
+import { LandingNavbar, LandingHero, LandingAbout } from '../components';
 /**
  *
  * @returns
@@ -14,6 +14,7 @@ const Landing = () => {
         <LandingNavbar />
       </div>
       <LandingHero />
+      <LandingAbout />
     </Container>
   );
 };
