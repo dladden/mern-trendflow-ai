@@ -10,3 +10,42 @@ export const socialLinks = [
   { id: 2, href: 'https://www.twitter.com', icon: 'fab fa-twitter' },
   { id: 3, href: 'https://www.twitter.com', icon: 'fab fa-squarespace' },
 ];
+
+export const services = [
+  {
+    id: 1,
+    icon: '🔭',
+    title: 'Explore Fast',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+  },
+  {
+    id: 2,
+    icon: '🪐',
+    title: 'Endless Library',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+  },
+  {
+    id: 3,
+    icon: '🔍',
+    title: 'Topics Tool',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+  },
+  {
+    id: 1,
+    icon: '🎧',
+    title: 'Read Articles',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+  },
+  {
+    id: 2,
+    icon: '🤍',
+    title: 'Safe and Secure',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+  },
+  {
+    id: 3,
+    icon: '🫧',
+    title: 'Explore Packages',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+  },
+];

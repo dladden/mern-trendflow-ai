@@ -17,10 +17,10 @@ const Container = styled.div`
   }
 
   .feature-card {
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: var(--grey-30);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
