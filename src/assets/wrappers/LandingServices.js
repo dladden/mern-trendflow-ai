@@ -4,7 +4,7 @@ const Container = styled.div`
   display: grid;
   gap: 2rem;
   padding: 2rem;
-  margin: 2rem auto;
+  margin: 0rem auto;
   max-width: 1200px;
   grid-template-columns: 1fr; // default to 1 column
 

@@ -14,7 +14,7 @@ const LandingAbout = () => {
             unde dolor?
           </p>
           <a href="#" className="btn">
-            read more
+            Explore All
           </a>
         </article>
       </div>
