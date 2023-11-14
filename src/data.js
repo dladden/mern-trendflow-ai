@@ -31,21 +31,92 @@ export const services = [
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
   },
   {
-    id: 1,
+    id: 4,
     icon: '🎧',
     title: 'Read Articles',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
   },
   {
-    id: 2,
+    id: 5,
     icon: '🤍',
     title: 'Safe and Secure',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
   },
   {
-    id: 3,
+    id: 6,
     icon: '🫧',
     title: 'Explore Packages',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+  },
+];
+
+export const project1 = [
+  {
+    id: 11,
+    title: 'NextJS',
+  },
+  {
+    id: 21,
+    title: 'ReactJS',
+  },
+  {
+    id: 41,
+    title: 'NextJS',
+  },
+  {
+    id: 51,
+    title: 'ReactJS',
+  },
+  {
+    id: 61,
+    title: 'NextJS',
+  },
+  {
+    id: 71,
+    title: 'ReactJS',
+  },
+];
+export const project2 = [
+  {
+    id: 81,
+    title: 'NextJS',
+  },
+];
+export const project3 = [
+  {
+    id: 91,
+    title: 'NextJS',
+  },
+  {
+    id: 101,
+    title: 'ReactJS',
+  },
+  {
+    id: 111,
+    title: 'NextJS',
+  },
+  {
+    id: 121,
+    title: 'ReactJS',
+  },
+  {
+    id: 131,
+    title: 'NextJS',
+  },
+  {
+    id: 141,
+    title: 'ReactJS',
+  },
+  {
+    id: 161,
+    title: 'ReactJS',
+  },
+  {
+    id: 151,
+    title: 'NextJS',
+  },
+  {
+    id: 171,
+    title: 'ReactJS',
   },
 ];
