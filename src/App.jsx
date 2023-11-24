@@ -8,6 +8,11 @@ import {
   DashboardLayout,
   EditTrend,
   Error,
+  AddTrend,
+  AllTrends,
+  Profile,
+  Admin,
+  Stats,
 } from './pages';
 
 //Route function (provided by react) contains routs as objects in an array
@@ -34,6 +39,28 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <DashboardLayout />,
+        children: [
+          {
+            index: true,
+            element: <AddTrend />,
+          },
+          {
+            path: 'stats',
+            element: <Stats />,
+          },
+          {
+            path: 'all-trends',
+            element: <AllTrends />,
+          },
+          {
+            path: 'admin',
+            element: <Admin />,
+          },
+          {
+            path: 'profile',
+            element: <Profile />,
+          },
+        ],
       },
     ],
   },
