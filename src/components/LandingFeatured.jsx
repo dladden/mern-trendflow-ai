@@ -12,6 +12,7 @@ const ProjectBox = ({ project }) => (
 
 const LandingFeatured = () => (
   <Container>
+    <section id="trends"></section>
     <div className="title-box special-sponsors">Weekly Top Trends</div>
     {project1.map((project) => (
       <ProjectBox key={project.id} project={project} />

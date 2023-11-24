@@ -163,12 +163,13 @@ h5 {
   margin-bottom: 1.5rem;
   max-width: 40em;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 small,
 .text-small {
   font-size: var(--small-text);
 }
-
 a {
   text-decoration: none;
 }
@@ -176,7 +177,6 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-
 .img {
   width: 100%;
   display: block;
