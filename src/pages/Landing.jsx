@@ -16,13 +16,15 @@ import {
 const Landing = () => {
   return (
     <Container>
-      <div>
-        <LandingNavbar />
+      <div className="container">
+        <div>
+          <LandingNavbar />
+        </div>
+        <LandingHero />
+        <LandingServices />
+        <LandingAbout />
+        <LandingFeatured />
       </div>
-      <LandingHero />
-      <LandingServices />
-      <LandingAbout />
-      <LandingFeatured />
     </Container>
   );
 };

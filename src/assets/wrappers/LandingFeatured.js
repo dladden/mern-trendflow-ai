@@ -1,57 +1,69 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
- display: grid;
+export const Container = styled.div`
+   display: grid;
   gap: 1rem;
-  grid-template-areas:
-    'special special special'
-    'platinum platinum platinum'
-    'gold gold gold gold gold';
   
-  @media (max-width: 1024px) {
+ 
+
+  // Large screen layout
+  grid-template-areas:
+    "title"
+    "week week week"
+    "week"
+    "alltime"
+    "month month month month month";
+  grid-template-columns: repeat(5, 1fr);
+
+  // Medium screen layout
+  @media (min-width: 768px) {
     grid-template-areas:
-      'special special'
-      'platinum platinum'
-      'gold gold gold';
+      "week"
+      "week week week week"
+      "week"
+      "alltime"
+      "month month month";
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  @media (max-width: 768px) {
+  // Small screen layout
+  @media (max-width: 767px) {
     grid-template-areas:
-      'special'
-      'platinum'
-      'gold gold';
+      "title"
+      "week week week"
+      "title"
+      "alltime"
+      "month month";
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .title-box {
-    background-color: #666867;
+   .title-box {
+    border-radius: 8px;
+    background-color: var(--grey-50);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
   }
 
-  .special-sponsors { grid-area: special; }
-  .platinum-sponsors { grid-area: platinum; }
-  .gold-sponsors { grid-area: gold; }
-
   .project-box {
-    background-color: #666867;
+    border-radius: 8px;
+    background: #fff;
+    padding: 1rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
-    
+    align-items: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
     &:hover {
-      background-color: green;
+      background-color: #ccc;
     }
   }
-
   a {
     text-decoration: none;
+    align-content: center;
     color: black;
     display: block;
-    width: 100%;
-    height: 100%;
+   
   }
 `;
 

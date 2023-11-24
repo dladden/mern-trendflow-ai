@@ -3,9 +3,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: grid;
   gap: 2rem;
-  padding: 2rem;
+  padding-bottom: 2rem;
   margin: 0rem auto;
-  max-width: 1200px;
   grid-template-columns: 1fr; // default to 1 column
 
   @media (min-width: 768px) {
@@ -31,6 +30,12 @@ const Container = styled.div`
       margin-bottom: 1rem;
       font-size: 3rem; // Example size, adjust as needed
     }
+    p {
+    line-height: 2;
+    color: var(--text-secondary-color);
+    margin-bottom: 1.5rem;
+    max-width: 35em;
+  }
 
     .title {
       margin: 0.5rem 0;
