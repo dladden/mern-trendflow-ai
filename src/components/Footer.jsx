@@ -1,4 +1,4 @@
-import { socialLinks } from '../data';
+import { socialLinks } from '../assets/utils/data';
 import LandingNavbarLinks from './LandingNavbarLinks';
 import LandingNavbarSocials from './LandingNavbarSocials';
 import Container from '../assets/wrappers/Footer';

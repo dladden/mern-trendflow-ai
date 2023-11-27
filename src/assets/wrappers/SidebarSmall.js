@@ -23,9 +23,8 @@ const Container = styled.aside`
   }
   .content {
     background: var(--background-secondary-color);
-    width: var(--fluid-width);
-    height: 95vh;
-    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
     padding: 4rem 2rem;
     position: relative;
     display: flex;
@@ -64,6 +63,7 @@ const Container = styled.aside`
     display: grid;
     place-items: center;
   }
+  
   .active {
     color: var(--primary-500);
   }

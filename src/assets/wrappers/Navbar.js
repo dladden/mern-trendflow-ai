@@ -28,7 +28,6 @@ const Container = styled.nav`
   .logo {
     display: flex;
     align-items: center;
-    width: 100px;
   }
   .btn-container {
     display: flex;
@@ -41,7 +40,7 @@ const Container = styled.nav`
       width: 90%;
     }
     .logo {
-      display: none;
+      /* display: none; */
     }
     .logo-text {
       display: block;

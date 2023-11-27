@@ -1,10 +1,72 @@
 //link used only on the Landing Page
-export const pageLinks = [
+export const landingLinks = [
   { id: 1, href: '#home', text: 'home' },
   { id: 2, href: '#about', text: 'about' },
   { id: 3, href: '#services', text: 'services' },
   { id: 4, href: '#trends', text: 'trends' },
 ];
+//links used in the sidebar of the dashboard
+export const dashboardLinks = [
+  {
+    text: 'add trend',
+    path: '.',
+  },
+  {
+    text: 'all trends',
+    path: 'all-jobs',
+  },
+  {
+    text: 'stats',
+    path: 'stats',
+  },
+  {
+    text: 'profile',
+    path: 'profile',
+  },
+  {
+    text: 'admin',
+    path: 'admin',
+  },
+];
+//links used in the navbar of the dashboard
+export const dashboardNavLinks = [
+  {
+    text: 'add trend',
+    path: '.',
+  },
+  {
+    text: 'profile',
+    path: 'profile',
+  },
+  {
+    text: 'admin',
+    path: 'admin',
+  },
+];
+//all links used in the small sidebar
+export const dashboardAllLinks = [
+  {
+    text: 'add trend',
+    path: '.',
+  },
+  {
+    text: 'all trends',
+    path: 'all-jobs',
+  },
+  {
+    text: 'stats',
+    path: 'stats',
+  },
+  {
+    text: 'profile',
+    path: 'profile',
+  },
+  {
+    text: 'admin',
+    path: 'admin',
+  },
+];
+
 //social links for the Navbar
 export const socialLinks = [
   { id: 1, href: 'https://www.twitter.com', icon: 'fab fa-facebook' },

@@ -12,7 +12,7 @@ const Logo = () => {
 const Container = styled.section`
   .logo{
     width: 40px;
-    height: auto; 
+    
   }
 `;
 
