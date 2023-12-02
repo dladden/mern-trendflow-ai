@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from '../assets/wrappers/Navbar';
 import { IoIosArrowForward, IoIosArrowBack, IoIosMenu } from 'react-icons/io';
+import { dashboardNavLinks } from '../assets/utils/data';
+import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
+s;
 import { useDashboardContext } from '../pages/DashboardLayout';
 
 function Navbar() {
   //toggle sidebar coming from DashboardLayout.jsx as context
   const { showSidebar, toggleSidebar } = useDashboardContext();
-
+  s;
   return (
     <Container>
       <div className="nav-center">
@@ -26,7 +29,14 @@ function Navbar() {
           <IoIosMenu />
         </button>
         <div>
-          <Logo />
+          {dashboardNavLinks.map((link) => {
+            const { text, path } = link;
+            return (
+              <NavLink to={path} key={text} className="">
+                {text}
+              </NavLink>
+            );
+          })}
         </div>
         <div className="btn-container">toggle/logout</div>
       </div>

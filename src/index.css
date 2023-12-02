@@ -52,7 +52,7 @@ html {
   /* rest of the vars */
   --border-radius: 3rem;
   --letter-spacing: 1px;
-  --transition: 0.3s ease-in-out all;
+  --transition: 0.1s ease-in-out all;
   --max-width: 1120px;
   --fixed-width: 600px;
   --fluid-width: 90vw;

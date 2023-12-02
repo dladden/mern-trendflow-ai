@@ -4,9 +4,8 @@ const Container = styled.aside`
   display: none;
   @media (min-width: 992px) {
     display: block;
-    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.1);
     .sidebar-container {
-      background: var(--background-secondary-color);
+      background: var(--grey-50);
       min-height: 100vh;
       height: 100%;
       width: 250px;
@@ -21,7 +20,7 @@ const Container = styled.aside`
       margin-left: 0;
     }
     header {
-      height: 6rem;
+      height: 4rem;
       display: flex;
       align-items: center;
       padding-left: 2.5rem;
@@ -38,7 +37,7 @@ const Container = styled.aside`
       padding: 1rem 0;
       padding-left: 2.5rem;
       text-transform: capitalize;
-      transition: padding-left 0.3s ease-in-out;
+      transition: padding-left 0.1s ease-in-out;
     }
     .nav-link:hover {
       padding-left: 3rem;

@@ -38,6 +38,8 @@ const Container = styled.nav`
   }
   .menu-btn {
     display: block;
+    display: flex;
+    align-items: center;
   }
   @media (min-width: 992px) {
     position: sticky;
@@ -52,7 +54,9 @@ const Container = styled.nav`
       display: block;
     }
     .arrow-btn {
-      display: block;
+    display: block;
+    display: flex;
+    align-items: center;
     }
     .menu-btn {
       display: none;

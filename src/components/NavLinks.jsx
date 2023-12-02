@@ -2,8 +2,14 @@ import React from 'react';
 import { useDashboardContext } from '../pages/DashboardLayout';
 import { dashboardAllLinks } from '../assets/utils/data';
 import { NavLink } from 'react-router-dom';
-
-function NavLinks() {
+/**
+ * This component is used in both SidebarSmall and Sidebar to show links
+ * Because of the 'end' prop in <NavLink> to use toggle the active class
+ * isSidebar is passed from Sidebar.jsx in NavLinks if it is true
+ * @param {*} param0
+ * @returns
+ */
+const NavLinks = ({ isSidebar }) => {
   const { toggleSidebar } = useDashboardContext();
   return (
     <div>
@@ -15,7 +21,7 @@ function NavLinks() {
               to={path}
               key={text}
               className="nav-link"
-              onClick={toggleSidebar}
+              onClick={isSidebar ? null : toggleSidebar}
               end
             >
               {text}
@@ -25,6 +31,6 @@ function NavLinks() {
       </div>
     </div>
   );
-}
+};
 
 export default NavLinks;

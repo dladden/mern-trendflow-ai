@@ -31,16 +31,12 @@ export const dashboardLinks = [
 //links used in the NAVBAR of the dashboard
 export const dashboardNavLinks = [
   {
-    text: 'add trend',
-    path: '.',
+    text: 'all trends',
+    path: 'all-trends',
   },
   {
     text: 'profile',
     path: 'profile',
-  },
-  {
-    text: 'admin',
-    path: 'admin',
   },
 ];
 //all links used in the SMALL-SIDEBAR
