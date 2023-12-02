@@ -33,6 +33,12 @@ const Container = styled.nav`
     display: flex;
     align-items: center;
   }
+  .arrow-btn {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
   @media (min-width: 992px) {
     position: sticky;
     top: 0;
@@ -44,6 +50,12 @@ const Container = styled.nav`
     }
     .logo-text {
       display: block;
+    }
+    .arrow-btn {
+      display: block;
+    }
+    .menu-btn {
+      display: none;
     }
   }
 `;

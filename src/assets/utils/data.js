@@ -5,7 +5,7 @@ export const landingLinks = [
   { id: 3, href: '#services', text: 'services' },
   { id: 4, href: '#trends', text: 'trends' },
 ];
-//links used in the sidebar of the dashboard
+//links used in the SIDEBAR of the dashboard
 export const dashboardLinks = [
   {
     text: 'add trend',
@@ -13,7 +13,7 @@ export const dashboardLinks = [
   },
   {
     text: 'all trends',
-    path: 'all-jobs',
+    path: 'all-trends',
   },
   {
     text: 'stats',
@@ -28,7 +28,7 @@ export const dashboardLinks = [
     path: 'admin',
   },
 ];
-//links used in the navbar of the dashboard
+//links used in the NAVBAR of the dashboard
 export const dashboardNavLinks = [
   {
     text: 'add trend',
@@ -43,7 +43,7 @@ export const dashboardNavLinks = [
     path: 'admin',
   },
 ];
-//all links used in the small sidebar
+//all links used in the SMALL-SIDEBAR
 export const dashboardAllLinks = [
   {
     text: 'add trend',
@@ -51,7 +51,7 @@ export const dashboardAllLinks = [
   },
   {
     text: 'all trends',
-    path: 'all-jobs',
+    path: 'all-trends',
   },
   {
     text: 'stats',
