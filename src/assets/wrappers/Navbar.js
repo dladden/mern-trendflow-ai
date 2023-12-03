@@ -5,13 +5,32 @@ const Container = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: ${(props) =>
+    props.hasScrolled ? '0 1px 0 0 rgba(0, 0, 0, 0.1)' : 'none'};
   background: var(--background-secondary-color);
   .nav-center {
     display: flex;
     width: 90vw;
     align-items: center;
     justify-content: space-between;
+  }
+  .navbar-link {
+    display: flex; // Align links in a row
+    align-items: right;
+     margin-left: auto;
+  }
+  .nav-links {
+    margin: 0 0.5rem;
+    color: var(--grey-500);
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+    cursor: pointer;
+    font-size: 0.9rem;
+    &:hover {
+      color: var(--clr-primary-5); // Change color on hover
+    }
   }
   .toggle-btn {
     background: transparent;

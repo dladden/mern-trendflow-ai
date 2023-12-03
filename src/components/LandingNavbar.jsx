@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { socialLinks } from '../assets/utils/data';
 import { Link } from 'react-router-dom';
 import LandingNavbarLinks from './LandingNavbarLinks';
@@ -5,8 +6,22 @@ import LandingNavbarSocials from './LandingNavbarSocials';
 import Container from '../assets/wrappers/LandingNavbar';
 import Logo from './Logo';
 const LandingNavbar = () => {
+  //using useState to set scroll initially to false
+  const [hasScrolled, setHasScrolled] = useState(false);
+  //Setting hasScrolled to true if scrolled down, false if scrolled to top
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
+    //Scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    //Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <Container>
+    <Container hasScrolled={hasScrolled}>
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">

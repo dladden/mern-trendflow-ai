@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.aside`
-  display: none;
+  display: none;//hiding the side bar on the small screen
   @media (min-width: 992px) {
     display: block;
     .sidebar-container {
