@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const Container = styled.nav`
+ position: sticky;  // Apply sticky position universally
+  top: 0;
   height: var(--nav-height);
   display: flex;
   align-items: center;

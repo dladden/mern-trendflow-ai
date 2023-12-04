@@ -11,7 +11,7 @@ const Container = styled.section`
     props.hasScrolled ? '0 1px 0 0 rgba(0, 0, 0, 0.1)' : 'none'};
   background: var(--background-secondary-color);
   z-index: 2;
-  height: 4rem;
+  height: var(--nav-height);
   display: flex;
   align-items: center;
 }

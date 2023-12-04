@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Container from '../assets/wrappers/Navbar';
+import UserDropdown from './UserDropdown';
+import DarkMode from './DarkMode';
 import { IoIosArrowForward, IoIosArrowBack, IoIosMenu } from 'react-icons/io';
 import { dashboardNavLinks } from '../assets/utils/data';
 import { NavLink } from 'react-router-dom';
-import Logo from './Logo';
 import { useDashboardContext } from '../pages/DashboardLayout';
 
 function Navbar() {
@@ -51,7 +52,10 @@ function Navbar() {
             );
           })}
         </div>
-        <div className="btn-container">toggle/logout</div>
+        <DarkMode />
+        <div className="btn-container">
+          <UserDropdown />
+        </div>
       </div>
     </Container>
   );
