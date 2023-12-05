@@ -1,59 +1,46 @@
 import styled from 'styled-components';
 
 const Container = styled.button`
- width: 60px;
-  height: 25px;
-  background: var(--clr-grey-5);
+background: var(--grey-50);
   border-radius: 25px;
+  border-width: 1px;
   cursor: pointer;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
+  position: relative;
+  width: 40px;
+  height: 25px;
+  transition: background-color 0.3s;
 
   .icon {
-    position: absolute;
-    transition: opacity 0.3s;
+    width: 22px;
+    height: 22px;
+    z-index: 2;
   }
 
   .sun-icon {
-    opacity: 1;
-  }
-
-  .moon-icon {
-    opacity: 0;
-  }
-
-  &.dark .moon-icon {
-    opacity: 1;
-  }
-
-  &.dark .sun-icon {
-    opacity: 0;
-  }
-
-  .circle {
-    width: 25px;
-    height: 25px;
-    background: var(--clr-white);
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative; // Ensures that the pseudo-element is positioned relative to the icon
+    transform: ${(props) =>
+      props.className === 'dark' ? 'translateX(16px)' : 'none'};
     transition: transform 0.3s;
+
+    &::before {
+      content: '';
+      background: red; // Color of the circle
+      border-radius: 50%;
+      width: 12px; // Size of the circle
+      height: 12px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); // Center the circle behind the sun icon
+      z-index: -1; // Ensure the circle is behind the icon
+    }
   }
 
-  &.dark .circle {
-    transform: translateX(35px);
+  &.dark {
+    background: var(--grey-100);
   }
 `;
 export default Container;

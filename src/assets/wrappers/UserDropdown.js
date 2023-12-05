@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   position: relative;
   .user{
-    width: 20px;
-    height: 20px;
+    width: 29px;
+    height: 29px;
   }
   .user-btn {
     display: flex;

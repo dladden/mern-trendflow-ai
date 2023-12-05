@@ -20,7 +20,8 @@ const DashboardLayout = () => {
 
   //function responsible for setting the dark theme
   const toggleDarkTheme = () => {
-    console.log('set dark theme');
+    const newDarkTheme = !isDarkTheme;
+    setIsDarkTheme(newDarkTheme);
   };
   //setting the sidebar equal to opposite of showSidebar
   const toggleSidebar = () => {

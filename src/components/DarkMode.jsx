@@ -8,11 +8,7 @@ const DarkMode = () => {
 
   return (
     <Container onClick={toggleDarkTheme} className={isDarkTheme ? 'dark' : ''}>
-      <div className="icons">
-        <HiOutlineSun className="icon sun-icon" />
-        <HiSun className="icon moon-icon" />
-      </div>
-      <div className="circle" />
+      <HiOutlineSun className="icon sun-icon" />
     </Container>
   );
 };
