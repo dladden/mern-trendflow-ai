@@ -15,6 +15,15 @@ import {
   Stats,
 } from './pages';
 
+//Function responsible for setting DarkTheme by persisting it in local storage
+export const checkDefaultTheme = () => {
+  //retrieving the state of the darkTheme to check if it true
+  const isDarkTheme = localStorage.getItem('darkTheme') === 'true';
+  document.body.classList.toggle('dark-theme', isDarkTheme);
+  return isDarkTheme;
+};
+checkDefaultTheme();
+
 //Route function (provided by react) contains routs as objects in an array
 //which displays what is shown in the url of the page ("/" is a home page)
 const router = createBrowserRouter([

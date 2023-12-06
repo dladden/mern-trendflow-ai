@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Container from '../assets/wrappers/Dashboard';
 import { SidebarSmall, Sidebar, Navbar } from '../components';
+import { checkDefaultTheme } from '../App';
 
 /**
  * Dashboard Layout takes on components and sets up the layout
@@ -16,12 +17,14 @@ const DashboardContext = createContext();
 
 const DashboardLayout = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(checkDefaultTheme);
 
   //function responsible for setting the dark theme
   const toggleDarkTheme = () => {
-    const newDarkTheme = !isDarkTheme;
-    setIsDarkTheme(newDarkTheme);
+    const newDarkTheme = !isDarkTheme; //newDarkTheme is opposite of isDarkTheme
+    setIsDarkTheme(newDarkTheme); //passing it to set
+    document.body.classList.toggle('dark-theme', newDarkTheme); //targeting body with toggle('class', boolean)
+    localStorage.setItem('darkTheme', newDarkTheme); //storing new value darkTheme as newDarkTheme
   };
   //setting the sidebar equal to opposite of showSidebar
   const toggleSidebar = () => {
