@@ -18,7 +18,7 @@ const Container = styled.section`
   }
   p {
     line-height: 2;
-    color: var(--text-secondary-color);
+    color: var(--text-second-color);
     margin-bottom: 1.5rem;
     max-width: 35em;
   }

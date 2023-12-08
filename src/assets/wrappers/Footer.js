@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.main`
 .footer {
     position: relative; /* Required for absolute positioning of the before element */
-    background: var(--white);
+    background: var(--background-color);
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;

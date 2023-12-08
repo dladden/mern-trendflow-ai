@@ -20,7 +20,7 @@ const Container = styled.main`
     line-height: 1.5;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
-    color: var(--text-secondary-color);
+    color: var(--text-second-color);
   }
   a {
     color: var(--primary-500);

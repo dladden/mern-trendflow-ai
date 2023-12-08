@@ -9,7 +9,7 @@ const Container = styled.section`
   background: var(--white);
   box-shadow: ${(props) =>
     props.hasScrolled ? '0 1px 0 0 rgba(0, 0, 0, 0.1)' : 'none'};
-  background: var(--background-secondary-color);
+  background: var(--background-color);
   z-index: 2;
   height: var(--nav-height);
   display: flex;

@@ -5,7 +5,7 @@ const Container = styled.aside`
   @media (min-width: 992px) {
     display: block;
     .sidebar-container {
-      background: var(--grey-50);
+      background: var(--background-third-color);
       min-height: 100vh;
       height: 100%;
       width: 250px;
@@ -33,7 +33,7 @@ const Container = styled.aside`
     .nav-link {
       display: flex;
       align-items: center;
-      color: var(--text-secondary-color);
+      color: var(--text-second-color);
       padding: 1rem 0;
       padding-left: 2.5rem;
       text-transform: capitalize;

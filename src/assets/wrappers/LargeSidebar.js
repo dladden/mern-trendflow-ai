@@ -9,7 +9,7 @@ const Container = styled.aside`
     display: block;
     box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.1);
     .sidebar-container {
-      background: var(--background-secondary-color);
+      background: var(--background-second-color);
       min-height: 100vh;
       height: 100%;
       width: 250px;
@@ -37,7 +37,7 @@ const Container = styled.aside`
     .nav-link {
       display: flex;
       align-items: center;
-      color: var(--text-secondary-color);
+      color: var(--text-second-color);
       padding: 1rem 0;
       padding-left: 2.5rem;
       text-transform: capitalize;

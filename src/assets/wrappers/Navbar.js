@@ -9,7 +9,7 @@ const Container = styled.nav`
   justify-content: center;
   box-shadow: ${(props) =>
     props.hasScrolled ? '0 1px 0 0 rgba(0, 0, 0, 0.1)' : 'none'};
-  background: var(--background-secondary-color);
+  background: var(--background-color);
   .nav-center {
     display: flex;
     width: 90vw;
@@ -23,7 +23,7 @@ const Container = styled.nav`
   }
   .nav-links {
     margin: 0 0.5rem;
-    color: var(--grey-500);
+    color: var(--text-second-color);
     text-decoration: none;
     text-transform: capitalize;
     letter-spacing: var(--spacing);

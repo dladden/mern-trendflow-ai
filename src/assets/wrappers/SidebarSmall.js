@@ -22,7 +22,7 @@ const Container = styled.aside`
     visibility: visible;
   }
   .content {
-    background: var(--background-secondary-color);
+    background: var(--background-second-color);
     width: 100%;
     height: 100%;
     padding: 4rem 2rem;
@@ -49,7 +49,7 @@ const Container = styled.aside`
   .nav-link {
     display: flex;
     align-items: center;
-    color: var(--text-secondary-color);
+    color: var(--text-second-color);
     padding: 1rem 0;
     text-transform: capitalize;
     transition: var(--transition);

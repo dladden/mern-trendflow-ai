@@ -16,7 +16,7 @@ const Container = styled.div`
   }
 
   .feature-card {
-    background: var(--grey-30);
+    background: var(--background-second-color);
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     padding: 1rem;
@@ -32,7 +32,7 @@ const Container = styled.div`
     }
     p {
     line-height: 2;
-    color: var(--text-secondary-color);
+    color: var(--text-second-color);
     margin-bottom: 1.5rem;
     max-width: 35em;
   }
